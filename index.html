@@ -39,7 +39,6 @@
     </nav>
     <!-- NAV END -->
 
-    <div class="b-example-divider"></div>
 
     <!-- HEADER START -->
     <header>
@@ -51,17 +50,34 @@
     </header>
     <!-- HEADER END -->
 
-    <div class="b-example-divider"></div>
 
     <!-- MAIN START -->
     <main>
 
-        <h1>main</h1>
+        <!-- Add new task -->
+         <section class="task-form">
+            <h2>Add Task</h2>
+            <form>
+                <div>
+                    <label for="title">Task name</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+
+                <div>
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description"></textarea>
+                </div>
+
+                <div class="actions">
+                    <button type="submit">Add</button>
+                    <button type="reset" class="secondary">Clear</button>
+                </div>
+            </form>
+        </section>
 
     </main>
     <!-- MAIN END -->
 
-    <div class="b-example-divider"></div>
 
     <!-- FOOTER START -->
     <footer>
