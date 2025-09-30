@@ -25,16 +25,10 @@
             <!-- Todo list -->
             <li>
                 <a href="">
-                    <i class="fa fa-list-alt" aria-hidden="true"></i>
+                    <i class="fa fa-thumb-tack" aria-hidden="true"></i>
                 </a>
             </li>
 
-            <!-- Task list -->
-            <li>
-                <a href="">
-                   <i class="fa fa-thumb-tack" aria-hidden="true"></i>
-                </a>
-            </li>
         </ul>
     </nav>
     <!-- NAV END -->
@@ -58,6 +52,7 @@
          <section class="task-form">
             <h2>Add Task</h2>
             <form>
+                <p class="message" style="display:none;">Task added successfully!</p>
                 <div>
                     <label for="title">Task name</label>
                     <input type="text" id="title" name="title" required>
@@ -75,6 +70,17 @@
             </form>
         </section>
 
+        <!-- Todo list -->
+        <section class="collection" style="display: none;">
+				
+            <h2>To-do list</h2>            
+            <ul class="list">
+
+            </ul>
+
+        </section>
+
+
     </main>
     <!-- MAIN END -->
 
@@ -85,10 +91,17 @@
         <ul class="footer-links">
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">GitHub</a></li>   
+            <li><a href="https://github.com/Fejanos/ToDo_FinalProject" target="_blank">GitHub</a></li>   
         </ul>
     </footer>
     <!-- FOOTER END -->
+
+
+    <!-- SCRIPTS based on the order -->
+    <script src="src/system/model.js"></script>
+	<script src="src/system/view.js"></script>
+	<script src="src/system/controller.js"></script>
+	<script src="src/script.js"></script>
 
 </body>
 </html>
